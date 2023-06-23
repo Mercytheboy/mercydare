@@ -27,14 +27,13 @@ html {
   --links-background-color: #333333;
   --text-color: #ffffff;
   --gray-text: #898989;
-  --top-bottom-padding: 2.5rem;
+  --top-bottom-padding: 2rem;
   --side-padding: 6rem;
 }
 
 body {
   min-height: 100vh;
   background-color: var(--background-color);
-  padding: var(--top-bottom-padding) var(--side-padding);
   font-size: 1.125rem;
   color: var(--text-color);
   overflow-x: hidden;
@@ -68,8 +67,9 @@ img {
   width: 100%;
 }
 
-.aboutme-page {
-  height: calc(100vh - var(--top-bottom-padding));
+.home-page {
+  min-height: 100vh;
+  padding: var(--top-bottom-padding) var(--side-padding);
 }
 
 .nav-header {
@@ -121,18 +121,20 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
 .skillset {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
+  list-style-type: none;
 }
 
 .keys {
   font-weight: 600;
   padding: 0.625rem 1rem;
+  font-size: 0.9rem;
   background: var(--links-background-color);
   border-radius: 2.625rem;
   color: var(--text-color);
@@ -165,7 +167,7 @@ img {
 
 .portfolio {
   min-height: 100vh;
-  padding: 2.8125rem 0;
+  padding: var(--top-bottom-padding) var(--side-padding);
 }
 
 #project {
@@ -214,8 +216,8 @@ img {
 }
 
 .contact-page {
-  height: calc(100vh - var(--top-bottom-padding));
-  padding: 2.8125rem 0;
+  height: 100vh;
+  padding: var(--top-bottom-padding) var(--side-padding);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -262,7 +264,7 @@ img {
 
 @media screen and (max-width: 1024px) {
   :root {
-    --top-bottom-padding: 2.5rem;
+    --top-bottom-padding: 2rem;
     --side-padding: 2rem;
   }
 
