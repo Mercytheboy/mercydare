@@ -70,6 +70,10 @@ img {
 .home-page {
   min-height: 100vh;
   padding: var(--top-bottom-padding) var(--side-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .nav-header {
