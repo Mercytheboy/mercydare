@@ -72,12 +72,10 @@ img {
   padding: var(--top-bottom-padding) var(--side-padding);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .nav-header {
-  height: 6.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,14 +110,15 @@ img {
   text-decoration: none;
   color: var(--text-color);
   transition: transform 0.1s ease-in;
+  cursor: pointer;
 }
 
 .links:hover {
-  /* transform: scale(90%); */
   background-color: var(--gray-text);
 }
 
 .aboutme {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
