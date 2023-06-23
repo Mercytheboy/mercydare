@@ -72,7 +72,7 @@ img {
   padding: var(--top-bottom-padding) var(--side-padding);
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .nav-header {
